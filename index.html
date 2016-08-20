@@ -11,14 +11,15 @@
   <header id="header">
     <h1><small>COM 201</small> Digital Writing</h1>
     <p class="tagline">
-      The rhetorical theory and applied practice of digital writing. Taught by
+      Rhetorical theory and applied practice of digital writing. Taught by
       <a href="#instructor">Professor Karl Stolley</a>, Fall 2016.
     </p>
-    <nav id="navigation">
-      <ul>
-        <li id="nav-cal"><a href="/dw/">Calendar</a></li>
+    <nav>
+      <ul class="nav">
+        <li id="nav-cal"><a href="#current-week">Calendar</a></li>
         <li id="nav-pro"><a href="projects/">Projects</a></li>
         <li id="nav-pol"><a href="policies/">Policies</a></li>
+        <li id="nav-lnk"><a href="#links">Links</a></li>
       </ul>
     </nav>
   </header>
@@ -26,8 +27,7 @@
 <main id="content">
   <article class="primary">
     <h2 class="label">Calendar</h2>
-    <ol class="content">
-
+    <ol class="calendar-weeks">
       <li class="week" data-expires="2016-08-30T12:00:00">
         <article id="week-01">
           <h3>Setup, Ruby I <small>Week&nbsp;One</small></h3>
@@ -440,26 +440,47 @@
       </li>
     </ol>
   </article>
-
-
-
-  <article id="instructor">
-    <h2 class="label">Instructor</h2>
-    <div class="content">
-      <h3 class="preview"><a href="http://karlstolley.com/">Prof. Karl Stolley</a></h3>
-      <ul class="preview">
-        <li><a href="mailto:karl.stolley@gmail.com">karl.stolley@gmail.com</a></li>
-        <li><a href="https://twitter.com/karlstolley">@karlstolley</a> on Twitter</li>
-        <li>karl.stolley on Skype</li>
-        <li>
-          Office hours in Siegel Hall 208 or via Skype (karl.stolley) or GChat
-          (karl.stolley@gmail.com) on Mondays &amp; Wednesdays, 2pm to 3pm, or by appointment
-          or chance (I’m signed into GChat most of the time)
-        </li>
-      </ul>
-    </div>
-  </article>
 </main>
+
+  <aside id="links">
+    <h3>Important Links</h3>
+<!--
+    <div class="link-group">
+-->
+      <section id="course-resources">
+        <h4>Course Resources</h4>
+        <ul>
+          <li><a href="https://3.basecamp.com/3058761/projects/1229182">Basecamp</a> (<a href="https://basecamp.com/help/3/guides/apps">apps</a>)</li>
+        </ul>
+      </section>
+<!--
+      <section id="essential-tools">
+        <h4>Essential Tools</h4>
+        <ul>
+          <li><a href="https://validator.w3.org/">HTML Validator</a> (W3.org)</li>
+          <li><a href="https://jigsaw.w3.org/css-validator/">CSS Validator</a> (W3.org)</li>
+          <li><a href="http://jshint.com/">JSHint</a></li>
+        </ul>
+      </section>
+-->
+<!--
+    </div>
+-->
+  </aside>
+  <aside id="instructor">
+    <h3>Instructor</h3>
+    <ul>
+      <li><a href="https://karlstolley.com/">Prof. Karl Stolley</a></li>
+      <li><a href="mailto:karl.stolley@gmail.com">karl.stolley@gmail.com</a></li>
+      <li><a href="https://twitter.com/karlstolley">@karlstolley</a> on Twitter</li>
+      <li>karl.stolley on GChat &amp; Skype</li>
+      <li id="office-hours">
+        <b>Office hours in Siegel Hall 208 or via GChat/Skype on Wednesdays, 2pm to 3pm</b>, or by
+        appointment or chance. I’m always signed into GChat, and closely monitor my Pings on
+        Basecamp. Message me any time—I always make students a priority.
+      </li>
+    </ul>
+  </aside>
   <footer id="footer">
     <p class="fineprint">
       Course syllabus &amp; site design by <a href="https://karlstolley.com/">Karl Stolley</a>.
@@ -474,15 +495,6 @@
 </div>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="site.js"></script>
-  <script>
-  (function(d) {
-    var config = {
-      kitId: 'duo7lwp',
-      scriptTimeout: 3000,
-      async: true
-    },
-    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='//use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
-  })(document);
-</script>
+  <script type="text/javascript" src="//fast.fonts.net/jsapi/2a6fd4a2-6d21-4f1f-80ca-3d2fabf9050e.js"></script>
 </body>
 </html>
